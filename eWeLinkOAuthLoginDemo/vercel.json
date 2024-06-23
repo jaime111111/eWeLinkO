@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/v2/user/oauth/token.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/v2/user/oauth/token",
+      "dest": "/api/v2/user/oauth/token.js"
+    }
+  ]
+}
